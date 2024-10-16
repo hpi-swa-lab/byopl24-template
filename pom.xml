@@ -21,7 +21,7 @@
     </repository>
   </repositories>
 
-  <build> 
+  <build>
     <plugins>
       <!-- Plugin for Junit testing -->
       <plugin>
@@ -104,7 +104,7 @@
   </build>
 
   <dependencies>
-	  <dependency>
+    <dependency>
       <groupId>org.graalvm.polyglot</groupId>
       <artifactId>polyglot</artifactId>
       <version>${graalvm.version}</version>

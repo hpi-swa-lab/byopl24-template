@@ -6,6 +6,9 @@ The Lox implementation is developed as part of the Build Your Own Programming La
 
 See Getting Started section in [BYOPL-2024_Overview](https://1drv.ms/b/s!AosvRVbmrjPTm_YQOBq8GXW3BYNq5A?e=EaAI5S).
 
+For development, you can use Oracle JDK 21, OpenJDK 21, or any of its derivatives.
+For best performance use GraalVM for JDK 21 version 21.0.4.
+
 ## Maven
 
 To directly use the command line, this might be helpful:
@@ -14,24 +17,24 @@ To directly use the command line, this might be helpful:
 ### Compile ...
 
 ```bash
-mvn package
+./mvnw package
 ```
 
 ### Run Test
 
 ```bash
-mvn test -Dtest=PrintTest
+./mvnw test -Dtest=PrintTest
 ```
 
 
 ### Running: 
 
 ```bash
-mvn exec:java -Dexec.args="-c 'print true;'"
+./mvnw exec:java -Dexec.args="-c 'print true;'"
 ```
 
 ### Cleanup
 
 ```bash
-mvn clean
+./mvnw clean
 ```
