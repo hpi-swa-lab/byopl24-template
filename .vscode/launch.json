@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "LoxMain",
+            "request": "launch",
+            "mainClass": "de.hpi.swa.lox.cli.LoxMain",
+            "projectName": "",
+            // "javaExec": "${config:java.home}/bin/java"
+        },
+        {
+            "type": "java",
+            "name": "Attach to swalanguage",
+            "projectName": "de.hpi.swa.lox",
+            "request": "attach",
+            "hostName": "localhost",
+            "port": 8000,
+            "sourceRoots": [
+                "${workspaceFolder}/src/main/java",
+            ]
+        }
+    ]
+}
