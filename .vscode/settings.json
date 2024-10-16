@@ -1,7 +1,7 @@
 {
-    // Customize this to point to (any) JDK 21 
+    // Customize this to point to a JDK 21
     // e.g.
-    //   "D:\\graalvm-jdk-23_windows-x64_bin\\graalvm-jdk-23.0.1+11.1"
+    //   "D:\\Program Files\\Java\\jdk-21"
     //   "/home/user/.sdkman/candidates/java/21.0.4-graal"
     "java.jdt.ls.java.home": null,
 
