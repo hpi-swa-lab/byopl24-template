@@ -18,8 +18,8 @@ import de.hpi.swa.lox.runtime.LoxContext;
 @GenerateBytecode(//
         languageClass = LoxLanguage.class, //
         boxingEliminationTypes = { long.class, boolean.class }, //
-        enableUncachedInterpreter = true, enableSerialization = true, //
-        enableTagInstrumentation = true)
+        enableUncachedInterpreter = true, //
+        enableSerialization = true)
 public abstract class LoxBytecodeRootNode extends LoxRootNode implements BytecodeRootNode {
 
     protected LoxBytecodeRootNode(LoxLanguage language, FrameDescriptor frameDescriptor) {
