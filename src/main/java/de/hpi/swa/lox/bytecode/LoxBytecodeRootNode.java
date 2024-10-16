@@ -9,7 +9,6 @@ import com.oracle.truffle.api.bytecode.Operation;
 import com.oracle.truffle.api.dsl.Bind;
 import com.oracle.truffle.api.dsl.Specialization;
 import com.oracle.truffle.api.frame.FrameDescriptor;
-import com.oracle.truffle.api.strings.TruffleString;
 
 import de.hpi.swa.lox.LoxLanguage;
 import de.hpi.swa.lox.nodes.LoxRootNode;
