@@ -16,8 +16,8 @@ public class MainTest extends AbstractLoxTest {
     public void testCommand() {
         // capture system out
         LoxMain.main(new String[]{"-c", "print true;"});
-        
-        assertEquals("Should print true", "true\n", outContent.toString());
+
+        assertEquals("Should print true", "true\n", normalize(outContent.toString()));
     }
 
     @Test
@@ -25,17 +25,17 @@ public class MainTest extends AbstractLoxTest {
         // Create a temporary file
         File tempFile = File.createTempFile("testFile", ".lox");
         tempFile.deleteOnExit();
-        
+
         // Write to the temporary file
         try (FileWriter writer = new FileWriter(tempFile)) {
             writer.write("print true;");
         }
-        
+
         // Execute the LoxMain with the temporary file
         LoxMain.main(new String[]{tempFile.getAbsolutePath()});
-        
+
         // Verify the output
-        assertEquals("Should print true", "true\n", outContent.toString());
+        assertEquals("Should print true", "true\n", normalize(outContent.toString()));
     }
 
 

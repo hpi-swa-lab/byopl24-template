@@ -31,13 +31,14 @@
         <configuration>
            <argLine>
                --add-exports=java.base/jdk.internal.module=truffle.tck
+               -Dpolyglot.engine.WarnInterpreterOnly=false
             </argLine>
             <includes>
-              <include>%regex[.*Test.*\.java]</include>
+              <include>**Test.java</include>
             </includes>
             <excludes>
-              <exclude>%regex[.*Abstract.*Test.*\.java]</exclude>
-          </excludes>
+              <exclude>**/Abstract*Test.java</exclude>
+            </excludes>
         </configuration>
       </plugin>
       <!-- Plugin to compile the g4 files ahead of the java files

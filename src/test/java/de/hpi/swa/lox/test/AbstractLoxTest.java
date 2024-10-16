@@ -79,7 +79,7 @@ public abstract class AbstractLoxTest {
         System.setOut(originalOut);
     }
 
-    String normalize(String s) {
+    protected String normalize(String s) {
         return s.replace("\r\n", "\n");
     }
 

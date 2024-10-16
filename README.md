@@ -20,14 +20,14 @@ To directly use the command line, this might be helpful:
 ./mvnw package
 ```
 
-### Run Test
+### Run Tests
 
 ```bash
-./mvnw test -Dtest=PrintTest
+./mvnw test
 ```
 
 
-### Running: 
+### Running the main class
 
 ```bash
 ./mvnw exec:java -Dexec.args="-c 'print true;'"
