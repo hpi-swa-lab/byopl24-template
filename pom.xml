@@ -4,22 +4,9 @@
   <artifactId>lox-language</artifactId>
   <version>0.0.1</version>
   <properties>
-    <antlr.version>4.12.0</antlr.version>
-    <graalvm.version>24.2.0-SNAPSHOT</graalvm.version>
+    <antlr.version>4.13.2</antlr.version>
+    <graalvm.version>24.2.0</graalvm.version>
   </properties>
-
-  <repositories>
-    <repository>
-      <id>lively-kernel</id>
-      <url>https://lively-kernel.org/lively4/byopl24/repository/${repodir}</url>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-    </repository>
-  </repositories>
 
   <build>
     <plugins>
@@ -51,7 +38,7 @@
       <plugin>
         <groupId>org.antlr</groupId>
         <artifactId>antlr4-maven-plugin</artifactId>
-        <version>4.12.0</version>
+        <version>${antlr.version}</version>
         <configuration>
           <sourceDirectory>${antlr.dir}</sourceDirectory>
           <listener>true</listener>
